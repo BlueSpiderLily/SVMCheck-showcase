@@ -4,6 +4,8 @@ SVMCheck is a Windows kernel-mode driver that explores **AMD-V (SVM)** hardware 
 
 It is a research and learning project: a way to understand how a hypervisor works by building one step by step and verifying each piece on live hardware. Windows is **never** the guest.
 
+> **Status: in progress.** SVMCheck is under active development, so this showcase describes where the project stands today and will keep changing as new phases are built and verified.
+
 > **About this repository.** This is a documentation-only showcase. The source code is private. I'm happy to walk through it in an interview or share read-only access on request.
 
 ![SVMCheck architecture](assets/architecture.svg)
@@ -12,8 +14,9 @@ It is a research and learning project: a way to understand how a hypervisor work
 
 | | |
 | :-- | :-- |
+| **Status** | In progress |
 | **Role** | Main architect |
-| **Built** | October 2026, in verified phases |
+| **Started** | October 2026, built in verified phases |
 | **Stack** | C++ and x64 assembly, Windows kernel (WDM), AMD SVM with nested paging |
 | **Size** | ~17.9k lines across 69 source files |
 | **Tests** | 9 host-side test suites (2,661 nested-paging policy checks, 75 ABI checks, 16 page-walk checks) plus on-hardware tests |
